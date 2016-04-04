@@ -24,8 +24,8 @@ public class LoadDriver {
 
 			DriverManager
 					.getConnection(
-							"jdbc:mysql://darkdb.ccjv9irbi51c.us-west-2.rds.amazonaws.com:3306/db_registration",
-							"darkstar", "tuDaswu47xo10807");
+							"jdbc:mysql://rds.amazonaws.com:3306/db_name",
+							"admin", "pass");
 			
 
 			java.sql.PreparedStatement pstmt = conn.prepareStatement("USE db_registration; CREATE TABLE IF NOT EXISTS db_table(id int NOT NULL auto_increment, VARCHAR(30) user, VARCHAR(30) pass, VARCHAR(30) repass, VARCHAR(30) name, VARCHAR(30) lname, VARCHAR(10) dob, TEXT gender, TEXT addr, TEXT apt, TEXT city, TEXT zip, TEXT phone, VARCHAR(30) email, PRIMARY KEY(id))");
