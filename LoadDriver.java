@@ -24,7 +24,7 @@ public class LoadDriver {
 							"user", "H45H3DP455W0RD");
 
 			java.sql.PreparedStatement pstmt = conn
-					.prepareStatement("USE db_registration");
+					.prepareStatement("USE db_name");
 			java.sql.PreparedStatement pstmt2 = conn.
 					prepareStatement("CREATE TABLE IF NOT EXISTS db_table");
 			java.sql.PreparedStatement pstmt3 = conn.prepareStatement("INSERT INTO db_table (user, pass, repass, name, lame, dob, gender, adds, apt, city, zip, phone, email) VALUES(id int NOT NULL auto_increment, VARCHAR(30) user, VARCHAR(30) pass, VARCHAR(30) repass, VARCHAR(30) name, VARCHAR(30) lname, VARCHAR(10) dob, TEXT gender, TEXT addr, TEXT apt, TEXT city, TEXT zip, TEXT phone, VARCHAR(30) email, PRIMARY KEY(id));");
