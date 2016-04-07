@@ -20,8 +20,8 @@ public class LoadDriver {
 
 			DriverManager
 					.getConnection(
-							"jdbc:mysql://darkdb.ccjv9irbi51c.us-west-2.rds.amazonaws.com:3306",
-							"darkstar", "664651702a546e3b702628355c2229");
+							"jdbc:mysql://dbname.dbwebsite.com:3306",
+							"user", "H45H3DP455W0RD");
 
 			java.sql.PreparedStatement pstmt = conn
 					.prepareStatement("USE db_registration");
