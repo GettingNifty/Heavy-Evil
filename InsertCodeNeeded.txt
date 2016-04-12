@@ -1,0 +1,15 @@
+//The following code needs to be inserted in the main class or needs to be reformed.
+
+UpdateTask user = new UpdateTask(tagText.getText());
+Pass Task pass = new PassTask(passText.getPassword());
+PassTask repass = new PassTask(passConfirm.getPassword());
+UpdateTask name = new UpdateTask(heyText.getText());
+UpdateTask lname = new UpdateTask(heyText2.getText());
+UpdateTask dob = new UpdateTask(userAge.getText());
+UpdateTask gender = new UpdateTask(genDer.getText());
+UpdateTask addr = new UpdateTask(heyText3.getText());
+UpdateTask apt = new UpdateTask(heyText4.getText());
+UpdateTask city = new UpdateTask(heyText5.getText());
+UpdateTask zip = new UpdateTask(heyText6.getText());
+UpdateTask phone = new UpdateTask(heyText7.getText());
+UpdateTask email = new UpdateTask(heyText8.getText());
