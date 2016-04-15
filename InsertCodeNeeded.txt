@@ -1,7 +1,7 @@
 //The following code needs to be inserted in the main class or needs to be reformed.
 
 UpdateTask user = new UpdateTask(tagText.getText());
-Pass Task pass = new PassTask(passText.getPassword());
+PassTask pass = new PassTask(passText.getPassword());
 PassTask repass = new PassTask(passConfirm.getPassword());
 UpdateTask name = new UpdateTask(heyText.getText());
 UpdateTask lname = new UpdateTask(heyText2.getText());
