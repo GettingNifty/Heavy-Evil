@@ -1,8 +1,5 @@
-//The following code needs to be inserted in the main class or needs to be reformed.
+//The following SwingWorker methods need to be accessible alternatively between the main class and sqlDriver class. 
 
-UpdateTask user = new UpdateTask(tagText.getText());
-PassTask pass = new PassTask(passText.getPassword());
-PassTask repass = new PassTask(passConfirm.getPassword());
 UpdateTask name = new UpdateTask(heyText.getText());
 UpdateTask lname = new UpdateTask(heyText2.getText());
 UpdateTask dob = new UpdateTask(userAge.getText());
@@ -13,3 +10,6 @@ UpdateTask city = new UpdateTask(heyText5.getText());
 UpdateTask zip = new UpdateTask(heyText6.getText());
 UpdateTask phone = new UpdateTask(heyText7.getText());
 UpdateTask email = new UpdateTask(heyText8.getText());
+
+PassTask pass = new PassTask(passText.getPassword());
+PassTask repass = new PassTask(passConfirm.getPassword());
