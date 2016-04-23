@@ -23,10 +23,8 @@ public class LoadDriver {
 
 			DriverManager
 					.getConnection(
-							"jdbc:mysql://darkdb.ccjv9irbi51c.us-west-2.rds.amazonaws.com:3306",
-							"darkstar", "664651702a546e3b702628355c2229");
-
-			java.sql.PreparedStatement pstmt = conn
+							"jdbc:mysql://rds.amazonaws.com:3306",
+							"username", "664651702a546e3b702628355c2229");			java.sql.PreparedStatement pstmt = conn
 					.prepareStatement("USE db_registration");
 			java.sql.PreparedStatement pstmt2 = conn
 					.prepareStatement("CREATE TABLE IF NOT EXISTS db_table{user_tag TINYTEXT");
