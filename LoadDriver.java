@@ -119,9 +119,11 @@ class UpdateTask extends SwingWorker<DataSource, Void> {
 
 			DriverManager
 					.getConnection(
-							"jdbc:mysql://darkdb.ccjv9irbi51c.us-west-2.rds.amazonaws.com:3306",
-							"darkstar", "664651702a546e3b702628355c2229");
-
+							"jdbc:mysql://mydb.us-region.rds.amazonaws.com:3306",
+							"username", "g14nth45h3dp455w0rd");
+                        
+                        //correct the mysql column add syntax
+                        
 			java.sql.PreparedStatement pstmt = conn
 					.prepareStatement("USE db_registration");
 			java.sql.PreparedStatement pstmt2 = conn
