@@ -124,11 +124,11 @@ class UpdateTask extends SwingWorker<DataSource, Void> {
 
 			DriverManager
 					.getConnection(
-							"jdbc:mysql://darkdb.ccjv9irbi51c.us-west-2.rds.amazonaws.com:3306",
-							"darkstar", "664651702a546e3b702628355c2229");
+							"jdbc:mysql://mydb.abcdef12345.us-region.rds.amazonaws.com:3306",
+							"user", "L0NG455H4SH3DP455W0RD");
 
 			java.sql.PreparedStatement pstmt = conn
-					.prepareStatement("USE db_registration");
+					.prepareStatement("USE db_name");
 			java.sql.PreparedStatement pstmt2 = conn
 					.prepareStatement("CREATE TABLE IF NOT EXISTS db_table(ID int NOT NULL AUTO_INCREMENT PRIMARY KEY);");
 			java.sql.PreparedStatement pstmt3 = conn
