@@ -259,7 +259,7 @@ public class JDial extends JDialog {
 												LoadDriver.sqlDriver(null);
 												LoadDriver.UpdateTask.class.isInstance(gameFrame);
 												LoadDriver.PassTask.class.isInstance(gameFrame);
-												
+												GameWorld.game(null);
 												
 												
 												
