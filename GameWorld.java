@@ -14,7 +14,8 @@ public class GameWorld implements GLEventListener {
 	public void display(GLAutoDrawable draw) {
 		// method body
 		final GL2 gl = draw.getGL().getGL2();
-		gl.glBegin(GL2.GL_3D);
+		gl.glBegin(GL2.LINES);
+		gl.glColor3f(1.0f, 0.5f, 0.7f);
 		gl.glVertex3f(0.50f,-0.50f,0);
 	      gl.glVertex3f(-0.50f,0.50f,0);
 	      gl.glEnd();
