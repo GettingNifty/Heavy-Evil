@@ -15,3 +15,6 @@ Maven 3+
 
   The project is meant to be a game but also an open source template for Java developers who want to build a fully functional OpenGL based application, that will eventually be connected to a forum using Java Servlets and JSP. Portable to DirectX, I plan to also incorporate Microsofts Kinect technology as well as the ALICE Bot using node.js api. 
 
+Major Updates:
+
+-Removed Maven from project. I would identify it as a rogue virus. To remove it, right click on the project and then Maven-->Disable Maven nature, then you will need to edit in your Build Path, go to the sources tab and remove the target output folders, renaming the output folder to Heavy Evil/bin and hit okay. Then you will be allowed to delete the target folder, which reduplicates itself after delete and cannot be deleted from within the system. An incorrect build will corrupt all of your files. 
