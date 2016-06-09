@@ -163,7 +163,7 @@ public class LoadDriver {
 							"jdbc:mysql://mydb.1234abc.us-region.rds.amazonaws.com:3306",
 							"name", "H45H3DP455W0RD");
 
-			PreparedStatement pstmt = conn.prepareStatement("USE my_db");
+			PreparedStatement pstmt = conn.prepareStatement("USE my_db;");
 			PreparedStatement pstmt2 = conn
 					.prepareStatement("CREATE TABLE IF NOT EXISTS db_table(ID int NOT NULL AUTO_INCREMENT PRIMARY KEY);");
 			PreparedStatement pstmt3 = conn
