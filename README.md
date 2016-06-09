@@ -1,15 +1,14 @@
 # Heavy-Evil
-Application/Web Forum/MMORPG Template
+Application/Web Forum/Game Framework Template
 
 
 SDK's currently used in project development.
 
-JOGL 2.3,
-MySQL,
-Spring 4.4,
-JRE and JDK 1.8 System Library(Java SE 8),
-JSoup1.8.3,
-Maven 3+
+JOGL 2.3+(Includes all current OpenGL Java bindings),
+MySQL Connector/J 5.1+,
+Spring 4.4+(for later stages, meant to be used when hosting your own servers),
+JRE and JDK 1.8+ System Library(Java SE 8),
+JSoup 1.8.3(currently unused)
 
   You're going to need to install the JDK's and use Maven SDK exclusively via the command line using cd terminal or linux command prompt calls to increase performance later in the development process. You only need to add the external jar files and create an Images folder within the project for your image sources. You can use any image but you will have to update the file name within the code.  
 
