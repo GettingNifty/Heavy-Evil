@@ -12,7 +12,7 @@ JSoup 1.8.3(currently unused)
 
   You're going to need to install the JDK's and use Maven SDK exclusively via the command line using cd terminal or linux command prompt calls to increase performance later in the development process. You only need to add the external jar files and create an Images folder within the project for your image sources. You can use any image but you will have to update the file name within the code.  
 
-  The project is an open source game template for Java developers who want to build a fully functional OpenGL based application or PC game. It will eventually be connected to a forum using Java Servlets and JSP(refer to the webpage). Portable to DirectX, and with some work and an XBOX One or PS4 development kit, it can be used to create console games as many are based in OpenGL, with the addition of many mainstream graphics programs. I plan to also incorporate Microsofts Kinect technology, the Hololens when it's development kit becomes available on the market outside of it's early development phases as well as the ALICE Bot most likely using node.js api, which is somewhat easy to compile in the command shell. 
+  The project is an open source game template for Java developers who want to build a fully functional OpenGL based application or PC game. It will eventually be connected to a forum using Java Servlets and JSP(refer to the webpage). I plan to also incorporate Microsofts Kinect technology, the Hololens when it's development kit becomes available on the market outside of it's early development phases as well as the ALICE Bot most likely using node.js api for starters.
 
 Major Updates:
 
