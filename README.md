@@ -4,16 +4,15 @@ Application/Web Forum/Game Framework Template
 
 SDK's currently used in project development.
 
-JOGL 2.3+(Includes all current OpenGL Java bindings),
+JOGL 2.3+(Includes all current OpenGL bindings),
 MySQL Connector/J 5.1+,
 Spring 4.4+(for later stages, meant to be used when hosting your own servers),
-JRE and JDK 1.8+ System Library(Java SE 8),
-JSoup 1.8.3(currently unused)
+JRE and JDK 1.8+ System Library(Java SE 8) but was originally built on JDK and RE 1.6,
+JSoup 1.8.3(currently unused), and Java3D(included in the Java standard library) for a higher level graphics library to be used on top of JOGL.  
 
-  You're going to need to install the JDK's and use Maven SDK exclusively via the command line using cd terminal or linux command prompt calls to increase performance later in the development process. You only need to add the external jar files and create an Images folder within the project for your image sources. You can use any image but you will have to update the file name within the code.  
 
-  The project is an open source game template for Java developers who want to build a fully functional OpenGL based application or PC game. It will eventually be connected to a forum using Java Servlets and JSP(refer to the webpage). I plan to also incorporate Microsofts Kinect technology, the Hololens when it's development kit becomes available on the market outside of it's early development phases as well as the ALICE Bot most likely using node.js api for starters.
+  You're going to need to install the Java JDK's and RE's in your environment. I currently use Eclipse Luna IDE which I would recommend. You only need to add the external jar files from your project build settings and create an Images folder within the project for your image sources. The background of the login window streams a live html template from a website.  
 
-Major Updates:
+  The project is an open source game template for Java developers who want to build a fully functional OpenGL based application or PC game. OpenGL is widely used in the console industry and easily translates to DirectX and graphics standards allow for easy cross-project development. It will eventually be connected to a forum website using Java Servlets and JSP(refer to the webpage heavyevil.gq). I plan to also incorporate Microsofts Kinect technology, the Hololens when it's software development kit becomes available, as it's currently in early development phases as well as the ALICE Bot most likely using node.js api or there may be a JDK. 
 
--Removed Maven from project. I would identify it as a rogue virus. To remove it, right click on the project and then Maven-->Disable Maven nature, then you will need to edit in your Build Path, go to the sources tab and remove the target output folders, renaming the output folder to Heavy Evil/bin and hit okay. Then you will be allowed to delete the target folder, which reduplicates itself after delete and cannot be deleted from within the system. An incorrect build will corrupt all of your files. 
+-Removed Maven from project. It showed instability when updating the pom.xml file and corrupted the entire project. To remove it, right click on the project and then Maven-->Disable Maven nature, then you will need to edit in your Build Path, go to the sources tab and remove the two target output folders, renaming the output folder to Heavy Evil/bin and hit okay. Then you will be allowed to delete the target folder, which reduplicates itself after delete and cannot be deleted from within the system. An incorrect build will corrupt all of your files. 
