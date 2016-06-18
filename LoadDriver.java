@@ -15,8 +15,9 @@ import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
 import javax.swing.text.JTextComponent;
 
-public class LoadDriver {
+public class LoadDriver extends JDial{
 
+        private static final long serialVersionUID = -5295729348478712395L;
 	static String rsUser;
 	static int id;
 	protected static JTextComponent textArea = new JTextField();
