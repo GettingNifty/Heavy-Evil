@@ -22,9 +22,8 @@ public class LoadDriver extends JDial {
 	static int id;
 	protected static JTextComponent textArea = new JTextField();
 	protected static JTextComponent textArea2 = new JTextField();
-
-	protected static JTextComponent userText = new JTextField();
-	protected static JTextComponent passText = new JTextField();
+	protected static JTextComponent passText = new JPasswordField();
+	protected static JTextComponent passConfirm = new JPasswordField();
 	protected static JTextComponent passConfirm = new JTextField();
 	protected static JTextComponent nameText = new JTextField();
 	protected static JTextComponent lnameText = new JTextField();
@@ -43,9 +42,7 @@ public class LoadDriver extends JDial {
 
 		protected UpdateTask(String cs) {
 
-			String user = new String(userText.getText());
-			String pass = new String(passText.getText());
-			String repass = new String(passConfirm.getText());
+			String user = new String(userText.getText())
 			String name = new String(nameText.getText());
 			String lname = new String(lnameText.getText());
 			String dob = new String(userAge.getText());
@@ -59,8 +56,6 @@ public class LoadDriver extends JDial {
 
 			try {
 				user.equals(user);
-				pass.equals(pass);
-				repass.equals(repass);
 				name.equals(name);
 				lname.equals(lname);
 				dob.equals(dob);
