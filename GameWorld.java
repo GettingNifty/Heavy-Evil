@@ -75,7 +75,7 @@ public class GameWorld extends JFrame implements GLEventListener {
 
 	}
 
-	public static void game(String[] args) {
+	public static void main(String[] args) {
 		// getting the capabilities object of GL2 profile
 		final GLProfile profile = GLProfile.get(GLProfile.GL2);
 		GLCapabilities glc = new GLCapabilities(profile);
