@@ -262,12 +262,12 @@ public class JDial extends JDialog {
 
 											try {
 
-												LoadDriver.sqlDriver(null);
+												LoadDriver.main(null);
 												LoadDriver.UpdateTask.class
 														.isInstance(progFrame);
 												LoadDriver.PassTask.class
 														.isInstance(progFrame);
-												GameWorld.game(null);
+												GameWorld.main(null);
 
 												System.out
 														.println(" The 'USE database' syntax no longer works with the addition of"
