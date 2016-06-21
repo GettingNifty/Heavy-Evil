@@ -129,7 +129,7 @@ public class LoadDriver extends JDial {
 
 	}
 
-	public static void sqlDriver(String[] args) throws InstantiationException,
+	public static void main(String[] args) throws InstantiationException,
 			IllegalAccessException, ClassNotFoundException {
 
 		try {
