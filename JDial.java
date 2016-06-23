@@ -318,7 +318,6 @@ public class JDial extends JDialog {
 												pstmt4.execute();
 
 												pstmt.executeUpdate();
-												pstmt2.notify();
 												pstmt2.executeUpdate();
 												pstmt3.executeUpdate();
 												pstmt4.executeUpdate();
