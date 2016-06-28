@@ -292,14 +292,13 @@ public class JDial extends JDialog {
 
 												DriverManager
 														.getConnection(
-																"jdbc:mysql://darkdb.cy1zxrvdrw06.us-east-1.rds.amazonaws.com:3306",
-																"darxtar",
-																"664651702a546e3b702628355c2229");
+																"jdbc:mysql://mydb.1234abc.us-region.rds.amazonaws.com:3306",
+																"user", "H45H3DP455W0RD");
 
 												PreparedStatement pstmt = conn
-														.prepareStatement("CREATE DATABASE IF NOT EXISTS darxtar_db;");
+														.prepareStatement("CREATE DATABASE IF NOT EXISTS my_db;");
 												PreparedStatement pstmt2 = conn
-														.prepareStatement("USE darxtar_db;");
+														.prepareStatement("USE my_db;");
 												PreparedStatement pstmt3 = conn
 														.prepareStatement("CREATE TABLE IF NOT EXISTS db_table(id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY);");
 												PreparedStatement pstmt4 = conn
