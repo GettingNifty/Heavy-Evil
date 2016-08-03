@@ -7,11 +7,12 @@ SDK's currently used in project development. Only download versions from the Ora
 
 JOGL 2.3,
 MySQL Connector/J 5.1+,
-Spring 4.4+(for later stages, meant to be used when hosting your own servers),
 JRE and JDK 1.8+ System Library(Java SE 8) but was originally built on JDK and RE 1.6,
-JSoup 1.8.3(currently unused), and Java3D(listed in the Java standard library but possibly not included)for a higher level graphics library that is meant to scale multiplayer online games quickly, to be used on top of JOGL for more simplicity.  
+and Java3D(listed in the Java standard library but possibly not included)for a higher level graphics library that is meant to scale multiplayer online games quickly, to be used on top of JOGL for more simplicity.
+Spring 4.4+(for much later stages, meant to be used when hosting the game your own servers, for instance rather than using hosting websites),
+JSoup 1.8.3(currently unused), 
 
- Install the JDK's and JRE's in your project environment or IDE. I currently use Eclipse Luna IDE which I would recommend. You only need to add the external jar files from your project build settings and create an Images folder within the project for your image sources. The background of the login window streams a live website url. You can change it in the code, but it currently is limited as to what pages it can render.   
+ Install the JDK's and JRE's in your project environment or IDE. I currently use Eclipse Luna IDE which I would recommend. You only need to add the external jar files from your project build settings(right click on project, click Build Path/Configure Build Path/Library pane/Add Library, name it, and then Add External jars to that) and create an Images folder within the project for your image sources. I will also being storing my object models in the Images folder. The background of the login window streams a live website url. You can change it in the code, but it currently is limited as to what pages it can render.   
 
 I use Amazon Web Services RDS MySQL Database and an EC2 instance for Security Groups on the free tier. Just allow incoming and outgoing TCP connections to "My IP Address"(which can change periodically) through port 3306. Uncheck the Multi-AZ deployment to stay on the free tier. My costs are about 5 dollars a month.  
 
