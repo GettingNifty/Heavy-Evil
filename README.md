@@ -4,11 +4,16 @@ Application/Web Forum/Game Framework Template
 SDK's currently used in project development. 
 
 JOGL 2.3,
+
 MySQL Connector/J 5.1,
+
 JRE and JDK 1.8 System Library(Java SE 8) but was originally built on JDK and RE 1.6,
-and Java3D 1.5.1(listed in the Java standard library but possibly not included)for a higher level graphics library that is meant to scale multiplayer online games quickly, to be used on top of JOGL for more simplicity.
+
+Java3D 1.5.1(listed in the Java standard library but not included)for a higher level graphics library that is meant to scale multiplayer online games quickly, to be used on top of JOGL for more simplicity. Java3D is already installed but heavily outdated on many Mac OS X versions, and so it causes problems for me in Eclipse currently. These files are located under /System/Library/Java/Extensions and are accessible via the command shell by typing "cd /" and then "ls". For Windows the tutoral seems to be to add the .bin file under native libraries under user libraries. I also need to see if there's a way to install a JRE in eclipse for Java3D. I am using Mac OS X Lion 10.7.5 with 4 GB's of RAM and stock VRAM and a 32/64 bit hybrid Core 2 Duo processor which is nothing fancy but handles the rendering very well. 
+
 Spring 4.4(for much later stages, meant to be used when hosting the game your own servers, for instance rather than using hosting websites),
-JSoup 1.8.3(currently unused)
+
+JSoup 1.8.3(currently unused but for HTML parsing)
 
  Install the JDK's and JRE's in your project environment or IDE. I currently use Eclipse Luna IDE which I would recommend. You only need to add the external jar files from your project build settings(right click on project, click Build Path/Configure Build Path/Library pane/Add Library/User Library, name it, and then Add External jars to that) and create an Images folder within the project for your image sources. I will also being storing my object models in the Images folder. The background of the login window streams a live website url. You can change it in the code, but it currently is limited as to what pages it can render.   
 
