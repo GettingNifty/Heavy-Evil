@@ -4,10 +4,10 @@ Application/Web Forum/Game Framework Template
 SDK's currently used in project development. Only download versions from the Oracle website or the specific vendor.
 
 JOGL 2.3,
-MySQL Connector/J 5.1+,
-JRE and JDK 1.8+ System Library(Java SE 8) but was originally built on JDK and RE 1.6,
-and Java3D(listed in the Java standard library but possibly not included)for a higher level graphics library that is meant to scale multiplayer online games quickly, to be used on top of JOGL for more simplicity.
-Spring 4.4+(for much later stages, meant to be used when hosting the game your own servers, for instance rather than using hosting websites),
+MySQL Connector/J 5.1,
+JRE and JDK 1.8 System Library(Java SE 8) but was originally built on JDK and RE 1.6,
+and Java3D 1.5.1(listed in the Java standard library but possibly not included)for a higher level graphics library that is meant to scale multiplayer online games quickly, to be used on top of JOGL for more simplicity.
+Spring 4.4(for much later stages, meant to be used when hosting the game your own servers, for instance rather than using hosting websites),
 JSoup 1.8.3(currently unused), 
 
  Install the JDK's and JRE's in your project environment or IDE. I currently use Eclipse Luna IDE which I would recommend. You only need to add the external jar files from your project build settings(right click on project, click Build Path/Configure Build Path/Library pane/Add Library/User Library, name it, and then Add External jars to that) and create an Images folder within the project for your image sources. I will also being storing my object models in the Images folder. The background of the login window streams a live website url. You can change it in the code, but it currently is limited as to what pages it can render.   
