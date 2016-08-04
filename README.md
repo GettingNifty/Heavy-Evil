@@ -3,7 +3,7 @@ Application/Web Forum/Game Framework Template
 
 SDK's currently used in project development. 
 
-JOGL 2.3,
+JOGL 2.3(includes Gluegen, JOAL and JOCL, and all current OpenGL methods),
 
 MySQL Connector/J 5.1,
 
@@ -14,7 +14,7 @@ Spring 4.4(for much later stages, meant to be used when hosting the game your ow
 JSoup 1.8.3(currently unused but for HTML parsing)
 
 
-Java3D 1.5.1(listed in the Java standard library but not included)for a higher level graphics library that is meant to scale multiplayer online games quickly, to be used on top of JOGL for more simplicity. Java3D is already installed but heavily outdated on many Mac OS X versions, and so it causes problems for me in Eclipse currently. These files are located under /System/Library/Java/Extensions and are accessible via the command shell by typing "cd /" and then "ls", "cd System", etc., and "open Extensions". For Windows the tutoral seems to be to add the .bin file under native libraries under user libraries. I also need to see if there's a way to install a JRE in eclipse for Java3D. I am using Mac OS X Lion 10.7.5 with 4 GB's of RAM and stock VRAM and a 32/64 bit hybrid Core 2 Duo processor which is nothing fancy but handles the rendering very well.
+Java3D 1.5.1 for a higher level graphics library that is meant to scale multiplayer online games quickly, to be used on top of JOGL for more simplicity. Java3D is already installed but heavily outdated on many Mac OS X versions, and so it causes problems for me in Eclipse currently. I will update the ReadMe soon when I have found a solution as there is a lot of file replacing, deleting, re-replacing, step by step. If you're really interested in getting pissed off the files that need to be fixed are in System/Library/Java/Extensions and System/Library/Java/JavaVirtualMachine/jre/lib/ext. When the new files replace the ones the error changes from CGraphicsDevice, to GLCapabilitesChooser, and then I think when I added the JOGL files into the /ext directory I got a GLException error, and I think I also had a GLGraphicsTemplate3D error but I can't remember what the class was called. For Windows and Linux the tutoral seems to be to add the .bin file under native libraries under user libraries. I also need to see if there's a way to install a JRE in Eclipse for Java3D on Mac which would be the easier approach. I am using Mac OS X Lion 10.7.5 with 4 GB's of RAM and stock VRAM and a 32/64 bit hybrid Core 2 Duo processor which is nothing fancy but handles the rendering very well.
 
 I currently use Eclipse Luna IDE which I would recommend. You only need to add the external jar files from the JDK of your choice and possibly user a JRE if you want to develop 1.8 programs on 1.6 or Blackberry, Android JRE's. From your project build settings(right click on project, click Build Path/Configure Build Path/Library pane/Add Library/User Library, name it, and then Add External jars to that) and create an Images folder within the project for your image sources. I will also being storing my object models in the Images folder. The background of the login window streams a live website url. You can change it in the code, but it currently is limited as to what pages it can render.   
 
