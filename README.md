@@ -1,8 +1,6 @@
 # Heavy-Evil
 Application/Web Forum/Game Framework Template
 
-The graphics library used in the this game are inspired by Resident Evil's early use of OpenGL for MT Framework, and its' wide use in the gaming industry today.
-
 SDK's currently used in project development. Only download versions from the Oracle website or the specific vendor.
 
 JOGL 2.3,
