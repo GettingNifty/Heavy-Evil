@@ -18,7 +18,11 @@ Java3D 1.5.2(experimented with 1.5.1 and 1.6) for a higher level graphics librar
 
 http://create.ife.no/vr/tools/j3d/java3d_1_5_2-macosx.pkg.zip
 
-For Windows and Linux the tutoral seems to be to add the .bin file under native libraries under user libraries. I also need to see if there's a way to install a JRE in Eclipse for Java3D on Mac which would be the easier approach. I am using Mac OS X Lion 10.7.5 with 4 GB's of RAM and stock VRAM and a 32/64 bit hybrid Core 2 Duo processor which is nothing fancy but handles the rendering very well.
+Here is a stacktrace error search if you want to go the Exception route. 
+
+https://samebug.io/exceptions/104654/java.lang.NoClassDefFoundError/appleawtcgraphicsdevice------?soft=false
+
+For Windows and Linux the tutorial seems to be to add the .bin file under native libraries under user libraries. I also need to see if there's a way to install a JRE in Eclipse for Java3D on Mac which would be the easier approach. I am using Mac OS X Lion 10.7.5 with 4 GB's of RAM and stock VRAM and a 32/64 bit hybrid Core 2 Duo processor which is nothing fancy but handles the rendering very well.
 
 I currently use Eclipse Luna IDE which I would recommend. You only need to add the external jar files from the JDK of your choice and possibly user a JRE if you want to develop 1.8 programs on 1.6 or Blackberry, Android JRE's. From your project build settings(right click on project, click Build Path/Configure Build Path/Library pane/Add Library/User Library, name it, and then Add External jars to that) and create an Images folder within the project for your image sources. I will also being storing my object models in the Images folder. The background of the login window streams a live website url. You can change it in the code, but it currently is limited as to what pages it can render.   
 
