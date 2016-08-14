@@ -13,7 +13,7 @@ Spring 4.4(for much later stages, meant to be used when hosting the game your ow
 
 JSoup 1.8.3(currently unused but for HTML parsing)
 
-Java3D 1.5.2 - An abstraction library meant to be used along side JOGL to scale online multiplayer games more easily. Java 8 has Java3D already installed but is heavily outdated on many Mac OS X versions, so basically the installers for the Operating System Runtime Environment create j3dcore.jar, j3dutils.jar and vectormath.jar in System/Library/Java/Extensions and System/Library/Java/JavaVirtualMachine/jre/lib/ext and when adding the external jars in the eclipse execution environment these files conflict with the old files with identical names. Right click on your Java library and select Configure Build Path, Libraries, click Edit, Installed JRE's, select one, click edit, and there you can select and remove duplicate class entries. I'm assuming the file location doesn't matter as much as the file itself as once you're done many will only be alias or copies. Make sure to restart eclipse and your computer. You also may have to manually replace the files in the links above. Currently I have the Java 3D 1.5.2 Library with duplicate files as my Java 8 library because that is how JOGL is setup after install and it works perfectly. You can see some of my scenes at facebook.com/gettingnifty. I'm going to try Java 3D 1.6 again to see if that fixes the issues. I currently have narrowed it down to the following error
+Java3D 1.5.2 - An abstraction library meant to be used along side JOGL to scale online multiplayer games more easily. Java 8 has Java3D already installed but is heavily outdated on many Mac OS X versions, so basically the installers for the Operating System Runtime Environment create j3dcore.jar, j3dutils.jar and vectormath.jar in System/Library/Java/Extensions and System/Library/Java/JavaVirtualMachine/jre/lib/ext and when adding the external jars in the eclipse execution environment these files conflict with the old files with identical names. Right click on your Java library and select Configure Build Path, Libraries, click Edit, Installed JRE's, select one, click edit, and there you can select and remove duplicate class entries. I'm assuming the file location doesn't matter as much as the file itself as once you're done many will only be alias or copies. Make sure to restart eclipse and your computer. You also may have to manually replace the files in the links above. Currently I have the Java 3D 1.5.2 Library with duplicate files as my Java 8 library because that is how JOGL is setup after install and it works perfectly. You can see some of my scenes at facebook.com/gettingnifty. I'm going to try Java 3D 1.6 again to see if that fixes the issues. I currently have narrowed it down to the following error fully configured under Java SE 8.
 
 Exception in thread "main" java.lang.NoClassDefFoundError: com/sun/opengl/util/BufferUtil
 	at javax.media.j3d.JoglPipeline.<clinit>(JoglPipeline.java:5048)
@@ -26,6 +26,23 @@ Exception in thread "main" java.lang.NoClassDefFoundError: com/sun/opengl/util/B
 	at javax.media.j3d.VirtualUniverse.<clinit>(VirtualUniverse.java:299)
 	at hEvil.ObjectLoader.<init>(ObjectLoader.java:29)
 	at hEvil.ObjectLoader.main(ObjectLoader.java:64)
+	
+and Java SE 6
+
+Exception in thread "main" java.lang.UnsupportedClassVersionError: hEvil/ObjectLoader : Unsupported major.minor version 52.0
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClassCond(ClassLoader.java:637)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:621)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:141)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:283)
+	at java.net.URLClassLoader.access$000(URLClassLoader.java:58)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:197)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+
 
 You can traverse the file system by typing "cd /", followed by "cd System," etc. The command "ls" will list the contents of the folder. 
 
