@@ -1,30 +1,37 @@
 # Heavy-Evil
-Application/Web Forum/Game Framework Template
+Java Application, Web Forum and Game Framework meant to be easily understood.
 
 SDK's currently used in project development. 
+
+JRE and JDK 1.8 System Library(Java SE 8) but was originally built on JDK and RE 1.6,
 
 JOGL 2.3(includes Gluegen, JOAL and JOCL, and all current OpenGL methods),
 
 MySQL Connector/J 5.1,
 
-JRE and JDK 1.8 System Library(Java SE 8) but was originally built on JDK and RE 1.6,
-
 Spring 4.4(for much later stages, meant to be used when hosting the game your own servers, for instance rather than using hosting websites),
 
 JSoup 1.8.3(currently unused but for HTML parsing)
 
+Java3D 1.5.2 - An abstraction library meant to be used along side JOGL to scale online multiplayer games more easily. Java 8 has Java3D already installed but is heavily outdated on many Mac OS X versions, so basically the installers for the Operating System Runtime Environment create j3dcore.jar, j3dutils.jar and vectormath.jar in System/Library/Java/Extensions and System/Library/Java/JavaVirtualMachine/jre/lib/ext and when adding the external jars in the eclipse execution environment these files conflict with the old files with identical names. Right click on your Java library and select Configure Build Path, Libraries, click Edit, Installed JRE's, select one, click edit, and there you can select and remove duplicate class entries. I'm assuming the file location doesn't matter as much as the file itself as once you're done many will only be alias or copies. Make sure to restart eclipse and your computer. You also may have to manually replace the files in the links above. Currently I have the Java 3D 1.5.2 Library with duplicate files as my Java 8 library because that is how JOGL is setup after install and it works perfectly. You can see some of my scenes at facebook.com/gettingnifty. I'm going to try Java 3D 1.6 again to see if that fixes the issues. I currently have narrowed it down to the following error
 
-Java3D 1.5.2(experimented with 1.5.1 and 1.6) for a higher level graphics library that is meant to scale multiplayer online games quickly, to be used on top of JOGL for more simplicity. Java3D is already installed but heavily outdated on many Mac OS X versions, and so it causes problems for me in Eclipse currently. I will update the ReadMe soon when I have found a solution as there is a lot of file replacing, deleting, re-replacing, step by step. If you're really interested in getting pissed off the files that need to be fixed are in System/Library/Java/Extensions and System/Library/Java/JavaVirtualMachine/jre/lib/ext. When the new files replace the ones the error changes from CGraphicsDevice, to GLCapabilitesChooser, then when I added the JOGL files into the /ext directory I got a GLException error, and at one point I also had a GraphicsConfigTemplate3D. I also found a Java3D 1.5.2 installer on stackoverflow, and now I'm getting a ComponentModel error. 
+Exception in thread "main" java.lang.NoClassDefFoundError: com/sun/opengl/util/BufferUtil
+	at javax.media.j3d.JoglPipeline.<clinit>(JoglPipeline.java:5048)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at javax.media.j3d.Pipeline$1.run(Pipeline.java:162)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.media.j3d.Pipeline.createPipeline(Pipeline.java:157)
+	at javax.media.j3d.MasterControl.loadLibraries(MasterControl.java:965)
+	at javax.media.j3d.VirtualUniverse.<clinit>(VirtualUniverse.java:299)
+	at hEvil.ObjectLoader.<init>(ObjectLoader.java:29)
+	at hEvil.ObjectLoader.main(ObjectLoader.java:64)
 
-http://create.ife.no/vr/tools/j3d/java3d_1_5_2-macosx.pkg.zip
+You can traverse the file system by typing "cd /", followed by "cd System," etc. The command "ls" will list the contents of the folder. 
 
-Here is a stacktrace error search if you want to go the Exception route. 
+For Windows and Linux the tutorial seems to be to add the .bin file under native libraries under user libraries. I am using Mac OS X Lion version 10.7.5 with 4 GB's of RAM and stock video RAM. It takes a few minutes to load a million hairs in Blender, which I use to edit my object models. I would recommend Blender or AutoDesk Maya. 
 
-https://samebug.io/exceptions/104654/java.lang.NoClassDefFoundError/appleawtcgraphicsdevice------?soft=false
-
-For Windows and Linux the tutorial seems to be to add the .bin file under native libraries under user libraries. I also need to see if there's a way to install a JRE in Eclipse for Java3D on Mac which would be the easier approach. I am using Mac OS X Lion 10.7.5 with 4 GB's of RAM and stock VRAM and a 32/64 bit hybrid Core 2 Duo processor which is nothing fancy but handles the rendering very well.
-
-I currently use Eclipse Luna IDE which I would recommend. You only need to add the external jar files from the JDK of your choice and possibly user a JRE if you want to develop 1.8 programs on 1.6 or Blackberry, Android JRE's. From your project build settings(right click on project, click Build Path/Configure Build Path/Library pane/Add Library/User Library, name it, and then Add External jars to that) and create an Images folder within the project for your image sources. I will also being storing my object models in the Images folder. The background of the login window streams a live website url. You can change it in the code, but it currently is limited as to what pages it can render.   
+For beginners, I currently use Eclipse Luna IDE which I would recommend. You only need to add the external jar files from the JDK of your choice and possibly user a JRE if you want to develop 1.8 programs on 1.6 or Blackberry, Android JRE's. From your project build settings(right click on project, click Build Path/Configure Build Path/Library pane/Add Library/User Library, name it, and then Add External jars to that) and create an Images folder within the project for your image sources. I will also being storing my object models in the Images folder. The background of the login window streams a live website url. You can change it in the code, but it currently is limited as to what pages it can render.   
 
 I use Amazon Web Services RDS MySQL Database and an EC2 instance for Security Groups on the free tier. Just allow incoming and outgoing TCP connections to "My IP Address"(which can change periodically) through port 3306. Uncheck the Multi-AZ deployment to stay on the free tier. My costs are about 5 dollars a month.  
 
