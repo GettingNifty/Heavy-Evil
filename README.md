@@ -42,7 +42,7 @@ Exception in thread "main" java.lang.UnsupportedClassVersionError: hEvil/ObjectL
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
 
 
-You can traverse the file system by typing "cd /", followed by "cd System," etc. The command "ls" will list the contents of the folder. 
+You can traverse the file system by opening your command shell and typing "cd /", followed by "cd System," etc. The command "ls" will list the contents of the folder. 
 
 For Windows and Linux the tutorial seems to be to add the .bin file under native libraries under user libraries. I am using Mac OS X Lion version 10.7.5 with 4 GB's of RAM and stock video RAM. It takes a few minutes to load a million hairs in Blender, which I use to edit my object models. I would recommend Blender or AutoDesk Maya. 
 
