@@ -15,13 +15,17 @@ JSoup 1.8.3(currently unused)for html parsing
 
 Java3D 1.6 - An abstraction and architecture library meant to be used along side JOGL to scale online multiplayer games more easily. Java 8 has Java3D already installed but is heavily outdated on many Mac OS X versions. Java3D works alongside JOGL, but needs to be configured using the Class Paths in Run>Run Configurations which I am still unable to acccomplish. The ObjectLoader class is currently not working.
 
-To add a new JRE, download the JDK which includes the JRE and developer tools as well. Click on Eclipse>Preferences>Java>Installed JRE's>Add after unpacking the tar.gz format file from the Oracle website. In my case my JRE's(JDK's) for eclipse are installed under /System/Library/Java/JavaVirtualMachines, so this is where you would copy the unpacked folder to. To have Eclipse load the correct .jar files automatically simply select the following file path and name it whatever you want. For instance I recently downloaded the latest version of Java and installed it on my machine.
+To add a new JRE, download the JDK which includes the JRE and developer tools as well. Click on Eclipse>Preferences>Java>Installed JRE's>Add after unpacking the tar.gz format file from the Oracle website. In my case my JRE's(JDK's) for eclipse are installed under /System/Library/Java/JavaVirtualMachines, so this is where you would copy the unpacked folder to. To have Eclipse load the correct .jar files automatically simply select the following file path and name it whatever you want. For instance I recently downloaded the latest JDK, installed it on my machine, and copied the entire folder to /System/Library/Java/JavaVirtualMachines where I keep my other JRE/JDK's. 
+
+So the following path should be selected and named from within Eclipse Installed JRE's>Add
 
 /System/Library/Java/JavaVirtualMachines/1.8.0_102.jdk/Contents/Home/jre
 
-You must download the tar.gz file and extract it by double clicking. The .dmg format is only an installer for your OS, but you can still copy the .jdk file to the location above. The automatic installer in Mac OS X System Preferences>Java will also install to this location I believe. 
+Now the .jar files will be loaded automatically.
 
-You can traverse the file system by opening your command shell and typing "cd /", followed by "cd System," etc. The command "ls" will list the contents of the folder. Type "open JavaVirtualMachines" once you have gotten to "cd Java" where the file is located and copy the new JRE/JDK into it.
+Download the tar.gz file from the Oracle website and extract it by double clicking. The .dmg format is only an installer for your OS, but you can still copy the .jdk file in /Library/Java/JavaVirtualMachines to the location above /System/Library/Java/JavaVirtualMachines. The automatic Java update installer in Mac OS X System Preferences>Java will also install to this location I believe. 
+
+You can traverse the file system by opening your command shell and typing "cd /", followed by "cd System," etc. The command "ls" will list the contents of the folder. Type "open JavaVirtualMachines" to open the folder in Finder once you have gotten to "cd Java" where the file is located and copy the new JRE/JDK into it.
 
 For Windows and Linux the tutorial seems to be to add the .bin file under native libraries under user libraries but I honestly couldn't tell you. I am using Mac OS X Lion version 10.7.5 with 4 GB's of RAM and stock video RAM. It takes a few minutes to load a million hairs in Blender, which I use to edit my object models. I would recommend Blender or AutoDesk Maya. You can download .obj files online or there are many other formats. The material .mtl file holds the texture data and has to be accessed some other way. 
 
