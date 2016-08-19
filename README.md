@@ -23,7 +23,7 @@ So the following path should be selected and named from within Eclipse Installed
 
 Now the .jar files will be loaded automatically.
 
-Download the tar.gz file from the Oracle website and extract it by double clicking. The .dmg format is only an installer for your OS, but you can still copy the .jdk file in /Library/Java/JavaVirtualMachines to the location above /System/Library/Java/JavaVirtualMachines. The automatic Java update installer in Mac OS X System Preferences>Java will also install to this location I believe. 
+The .dmg format is only an installer for your OS, but you can still copy the .jdk file in /Library/Java/JavaVirtualMachines to the location above /System/Library/Java/JavaVirtualMachines. The automatic Java update installer in Mac OS X System Preferences>Java will also update/install to this location. 
 
 You can traverse the file system by opening your command shell and typing "cd /", followed by "cd System," etc. The command "ls" will list the contents of the folder. Type "open JavaVirtualMachines" to open the folder in Finder once you have gotten to "cd Java" where the file is located and copy the new JRE/JDK into it.
 
