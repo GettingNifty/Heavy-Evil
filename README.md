@@ -3,7 +3,7 @@ Java Application, Web Forum and Game Framework meant to be easily understood.
 
 SDK's currently used in project development. 
 
-Java SE 8/JDK 8/JRE 8 but was originally built on JDK 1.6, as far as I remember once you install the JDK eclipse will detect it on your system. As with the other libraries you just need to add the external .jar files to a created library from after extracting the .zip file. 
+Java SE 8/JDK 1.8/JRE 8 but was originally built on JDK 1.6 and still compiles on both. 
 
 JOGL 2.3(includes Gluegen, JOAL and JOCL, and all current OpenGL native libraries),
 
