@@ -9,13 +9,19 @@ JOGL 2.3(includes Gluegen, JOAL and JOCL, and all current OpenGL native librarie
 
 MySQL Connector/J 5.1
 
-Java3D 1.6 - An abstraction and architecture library meant to be used along side JOGL to scale online multiplayer games more easily. Java 8 has Java3D already installed but is heavily outdated on many Mac OS X versions. Java3D works alongside jogl.jar and gluegen-rt.jar in /Library/Java, but they may be outdated. I'm still working on it. I actually just noticed all of the damn .jars that I wasn't even using in the jogamp release. Hopefully I will figure it out soon but until then my ObjectLoader class is not compiling.  
+Spring 4.4(currently unused)for server hosting rather than using a hosting website
 
-Automatic installers will add j3dcore.jar, j3dutils.jar and vectormath.jar in System/Library/Java/Extensions and System/Library/Java/JavaVirtualMachine/jre/lib/ext. I've tried removed all of the old jni files, replaced them, replaced all the Java3D files with the J3D 1.6 files and am still getting the errors below, so I'm not sure how much they really play a role. To edit the .jar file paths, right click on your Java library and select Configure Build Path, Libraries, click Edit, Installed JRE's(User Libraries if it's not a JRE), select one, click edit, and there you can select and remove duplicate or unwanted library entries or to add the new entries. You also may be able to do the same thing by clicking Run>Run Configuration, or Preferences>Java>Installed JRE's.
+JSoup 1.8.3(currently unused)for html parsing
 
-I added a snapshot in my file uploads to show you what your library should look like and which .jar files to include if you are unable to compile the other files in the project. They seem to only work with a specific access privelage in /System/Library and /Libary .jars are not recognized I believe.
+Java3D 1.6 - An abstraction and architecture library meant to be used along side JOGL to scale online multiplayer games more easily. Java 8 has Java3D already installed but is heavily outdated on many Mac OS X versions. Java3D works alongside JOGL, but needs to be configured using the Class Paths in Run>Run Configurations which I am still unable to acccomplish. The ObjectLoader class is currently not working.
 
-You can traverse the file system by opening your command shell and typing "cd /", followed by "cd System," etc. The command "ls" will list the contents of the folder. 
+To add a new JRE, download the JDK which includes the JRE and developer tools as well. Click on Eclipse>Preferences>Java>Installed JRE's>Add after unpacking the tar.gz format file from the Oracle website. In my case my JRE's(JDK's) for eclipse are installed under /System/Library/Java/JavaVirtualMachines, so this is where you would copy the unpacked folder to. To have Eclipse load the correct .jar files automatically simply select the following file path and name it whatever you want. For instance I recently downloaded the latest version of Java and installed it on my machine.
+
+/System/Library/Java/JavaVirtualMachines/1.8.0_102.jdk/Contents/Home/jre
+
+You must download the tar.gz file and extract it by double clicking. The .dmg format is only an installer for your OS, but you can still copy the .jdk file to the location above. The automatic installer in Mac OS X System Preferences>Java will also install to this location I believe. 
+
+You can traverse the file system by opening your command shell and typing "cd /", followed by "cd System," etc. The command "ls" will list the contents of the folder. Type "open JavaVirtualMachines" once you have gotten to "cd Java" where the file is located and copy the new JRE/JDK into it.
 
 For Windows and Linux the tutorial seems to be to add the .bin file under native libraries under user libraries but I honestly couldn't tell you. I am using Mac OS X Lion version 10.7.5 with 4 GB's of RAM and stock video RAM. It takes a few minutes to load a million hairs in Blender, which I use to edit my object models. I would recommend Blender or AutoDesk Maya. You can download .obj files online or there are many other formats. The material .mtl file holds the texture data and has to be accessed some other way. 
 
