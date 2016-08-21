@@ -25,9 +25,9 @@ or if it's a JRE it will be the /Home folder.
 
 Now the .jar files will be loaded automatically. Do not change the build configuration but make sure all of the .jars linked in the library are replaced with the newest download release, which is explained below.
 
-The .dmg format is a JDK installer for your OS, but you can still copy the .jdk file in /Library/Java/JavaVirtualMachines to the location above. The automatic Java update installer in Mac OS X System Preferences>Java will also update/install to this location, I believe, but it may be installed elsewhere as I removed the files and Java still said it had the latest update. I've included a screen shot to show you what JOGL/Jogamp/Java3D files to copy into the aforementioned directory. All other files can be removed beforehand.  
+The .dmg format is a JDK installer for your OS, but you can still copy the .jdk file in /Library/Java/JavaVirtualMachines to the location above. The automatic Java update installer in Mac OS X System Preferences>Java will also update/install to this location, I believe, but it may be installed elsewhere as I removed the files and Java still said it had the latest update. I've included a screen shot to show you what JOGL/Jogamp/Java3D files to copy into the aforementioned directory, and another one to show you what should be imported into your project libraries. All other files can be removed beforehand as the new jnilib and dylib files are in the jogamp release under /lib/Your OS. The rest of the .jar are in /jar and /jar/atomic.
 
-This is the tutorial I followed, without doing any native linking. If you already have you can go into Build Configurations and select each class on the left, and remove each native link path. Restore default will help if you've changed the configuration.
+The following link is the current installation I'm using without doing any native linking. If you already have you can go into Build Configurations and select each class on the left, and remove each native link path. Restore default will help if you've changed the configuration.
 
 https://jogamp.org/wiki/index.php/Java3D_FAQ
 
