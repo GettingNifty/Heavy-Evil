@@ -13,7 +13,7 @@ Spring 4.4(currently unused)for server hosting rather than using a hosting websi
 
 JSoup 1.8.3(currently unused)for html parsing
 
-Java3D 1.6 - An abstraction and architecture library meant to be used along side JOGL to scale online multiplayer games more easily. Java 8 has Java3D already installed but is heavily outdated on many Mac OS X versions. You should download the newest release of both Java3D and JOGL from the Jogamp website to get it working correctly. There is no need to set native paths as the jar files contain this information but must be placed in /LibarJava3D works alongside JOGL.
+Java3D 1.6 - An abstraction and architecture library meant to be used along side JOGL to scale online multiplayer games more easily. Java 8 has Java3D already installed but is heavily outdated on many Mac OS X versions. You should download the newest release of both Java3D and JOGL from the Jogamp website to get it working correctly. There is no need to set native paths as the jar files contain this information but must be placed in /Library/Java/Extensions. 
 
 To add a new JRE, download the JDK which includes the JRE and developer tools as well. You can download the JRE if you want. I still have yet to learn debugging. Click on Eclipse>Preferences>Java>Installed JRE's>Add after unpacking the tar.gz format file from the Oracle website. In my case my JRE's(JDK's) for eclipse are installed under /System/Library/Java/JavaVirtualMachines, so this is where you would copy the unpacked folder to. To have Eclipse load the correct .jar files automatically simply select the following file path and name it whatever you want. For instance I recently downloaded the latest JDK, installed it on my machine, and copied the entire folder to /System/Library/Java/JavaVirtualMachines where I keep my other JRE/JDK's. 
 
@@ -23,15 +23,15 @@ So the following path should be selected and named from within Eclipse Installed
 
 or if it's a JRE it will be the /Home folder.
 
-Now the .jar files will be loaded automatically.
+Now the .jar files will be loaded automatically. Do not change the build configuration but make sure all of the .jars linked in the library are replaced with the newest download release, which is explained below.
 
-The .dmg format is only an installer for your OS, but you can still copy the .jdk file in /Library/Java/JavaVirtualMachines to the location above. The automatic Java update installer in Mac OS X System Preferences>Java will also update/install to this location, I believe, but it may be installed elsewhere as I removed the files and Java still said it had the latest update. I've included a screen shot to show you what JOGL/Jogamp/Java3D files to copy into the aforementioned directory. All other files can be removed beforehand. Make sure you have the latest releases for more ease. 
+The .dmg format is a JDK installer for your OS, but you can still copy the .jdk file in /Library/Java/JavaVirtualMachines to the location above. The automatic Java update installer in Mac OS X System Preferences>Java will also update/install to this location, I believe, but it may be installed elsewhere as I removed the files and Java still said it had the latest update. I've included a screen shot to show you what JOGL/Jogamp/Java3D files to copy into the aforementioned directory. All other files can be removed beforehand.  
 
 This is the tutorial I followed, without doing any native linking.
 
 https://jogamp.org/wiki/index.php/Java3D_FAQ
 
-You can traverse the file system by opening your command shell and typing "cd /", followed by "cd System," etc. The command "ls" will list the contents of the folder. You can go backwards by typing "cd ../". Type "open JavaVirtualMachines" to open the folder in Finder once you have gotten to "cd Java" where the file is located and copy the new JRE/JDK into it, so that you can use the JVM under System/Library to store your JRE's and switch between different versions.
+You can traverse the file system by opening your command shell and typing "cd /", followed by "cd System," etc. The command "ls" will list the contents of the folder. You can go backwards by typing "cd ../". Type "open JavaVirtualMachines" to open the folder in Finder once you have gotten to "cd Java" where the file is located and copy the new JRE/JDK into it, so that you can use the JVM under System/Library to store your JRE's and switch between different versions. Once you open a file from the shell, you can use the drop down list to navigate back to /Mac OS X and navigate with the mouse.
 
 I am using Mac OS X Lion version 10.7.5 with 4 GB's of RAM and stock VRAM. It takes a few minutes to load a million hairs in Blender, which I use to edit my object models. I would recommend Blender or AutoDesk Maya. You can download .obj files online or there are many other formats. The material .mtl file holds the texture data and has to be accessed some other way. 
 
