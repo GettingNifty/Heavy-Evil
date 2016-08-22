@@ -31,6 +31,8 @@ The following link is the current installation I'm using without doing any nativ
 
 https://jogamp.org/wiki/index.php/Java3D_FAQ
 
+Once you're done installing, you can delete the old errors from the problems tab to remove all the warnings.
+
 You can traverse the file system by opening your command shell and typing "cd /", followed by "cd System," etc. The command "ls" will list the contents of the folder. You can go backwards by typing "cd ../". Type "open JavaVirtualMachines" to open the folder in Finder once you have gotten to "cd Java" where the file is located and copy the new JRE/JDK into it, so that you can use the JVM under System/Library to store your JRE's and switch between different versions. Once you open a file from the shell, you can use the drop down list to navigate back to /Mac OS X and navigate with the mouse.
 
 I am using Mac OS X Lion version 10.7.5 with 4 GB's of RAM and stock VRAM. Don't forget you can take your Mac to the Apple store and they will upgrade it to the newest possible OS for free. It takes a few minutes to load a million hairs in Blender, which I use to edit my object models. I would recommend Blender or AutoDesk Maya. You can download .obj files online or there are many other formats. The material .mtl file holds the texture data and has to be accessed some other way. 
