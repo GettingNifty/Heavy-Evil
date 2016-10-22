@@ -15,6 +15,14 @@ JSoup 1.8.3(currently unused)for html parsing
 
 Jogamp Java3D 1.6 - An abstraction and architecture library meant to be used along side JOGL to scale online multiplayer games more easily. Java 8 has Java3D already installed but is heavily outdated on many Mac OS X versions. You should download the newest release of both Java3D and JOGL from the Jogamp website to get it working correctly. There is no need to set native paths as the jar files contain this information but must be placed in /Library/Java/Extensions. 
 
+Here are a few video links to scenes I am creating.
+https://m.facebook.com/gettingnifty#!/story.php?story_fbid=10210407875742223&id=1503244128
+https://m.facebook.com/gettingnifty#!/story.php?story_fbid=10209542840756889&id=1503244128
+https://m.facebook.com/gettingnifty#!/story.php?story_fbid=10209612432776646&id=1503244128
+
+
+
+
 To add a new JRE, download the JDK which includes the JRE and developer tools as well. You can download the JRE if you want. I still have yet to learn debugging. Click on Eclipse>Preferences>Java>Installed JRE's>Add after unpacking the tar.gz format file from the Oracle website. In my case my JRE's(JDK's) for eclipse are installed under /System/Library/Java/JavaVirtualMachines, so this is where you would copy the unpacked folder to. To have Eclipse load the correct .jar files automatically simply select the following file path and name it whatever you want. For instance I recently downloaded the latest JDK, installed it on my machine, and copied the entire folder to /System/Library/Java/JavaVirtualMachines where I keep my other JRE/JDK's. 
 
 So the following path should be selected and named from within Eclipse Installed JRE's>Add
