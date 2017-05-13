@@ -17,11 +17,15 @@ Jogamp Java3D 1.6 - An abstraction and architecture library meant to be used alo
 
 Here are a few video links to scenes I am creating...
 
-https://m.facebook.com/gettingnifty#!/story.php?story_fbid=10210407875742223&id=1503244128
+https://www.facebook.com/gettingnifty/videos/vb.1503244128/10209612469617567/?type=2&video_source=user_video_tab
 
-https://m.facebook.com/gettingnifty#!/story.php?story_fbid=10209542840756889&id=1503244128
+https://www.facebook.com/gettingnifty/videos/vb.1503244128/10209494139979400/?type=2&theater
 
-https://m.facebook.com/gettingnifty#!/story.php?story_fbid=10209612432776646&id=1503244128
+https://www.facebook.com/gettingnifty/videos/vb.1503244128/10210407875742223/?type=2&video_source=user_video_tab
+
+https://www.facebook.com/gettingnifty/videos/vb.1503244128/10209542840756889/?type=2&theater
+
+https://www.facebook.com/gettingnifty/videos/vb.1503244128/10210407875742223/?type=2&video_source=user_video_tab
 
 To add a new JRE, download the JDK which includes the JRE and developer tools as well. You can download the JRE if you want. I still have yet to learn debugging. Click on Eclipse>Preferences>Java>Installed JRE's>Add after unpacking the tar.gz format file from the Oracle website. In my case my JRE's(JDK's) for eclipse are installed under /System/Library/Java/JavaVirtualMachines, so this is where you would copy the unpacked folder to. To have Eclipse load the correct .jar files automatically simply select the following file path and name it whatever you want. For instance I recently downloaded the latest JDK, installed it on my machine, and copied the entire folder to /System/Library/Java/JavaVirtualMachines where I keep my other JRE/JDK's. 
 
