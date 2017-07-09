@@ -1,4 +1,6 @@
 # Heavy-Evil
+
+[![Join the chat at https://gitter.im/Heavy-Evil/Lobby](https://badges.gitter.im/Heavy-Evil/Lobby.svg)](https://gitter.im/Heavy-Evil/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 Java Application, Web Forum and Game Framework
 
 SDK's currently used in project development. 
