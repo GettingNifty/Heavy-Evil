@@ -5,9 +5,9 @@ Java Application, Web Forum and Game Framework
 
 SDK's currently used in project development. 
 
-Java SE 8/JDK 1.8/JRE 8 but was originally built on JDK 1.6 and still compiles on both. 
+Java SE 9, Java SE 8, Java SE 6  
 
-Jogamp JOGL 2.3(includes Gluegen, JOAL and JOCL, and all current OpenGL native libraries),
+Jogamp JOGL 2.3.2(includes Gluegen, JOAL and JOCL, and all current OpenGL native libraries),
 
 MySQL Connector/J 5.1
 
@@ -15,7 +15,7 @@ Spring 4.4(currently unused)for server hosting rather than using a hosting websi
 
 JSoup 1.8.3(currently unused)for html parsing
 
-Jogamp Java3D 1.6 - An abstraction and architecture library meant to be used along side JOGL to scale online multiplayer games more easily. Java 8 has Java3D already installed but is heavily outdated on many Mac OS X versions. You should download the newest release of both Java3D and JOGL from the Jogamp website to get it working correctly. There is no need to set native paths as the jar files contain this information but must be placed in /Library/Java/Extensions. 
+Jogamp Java3D 1.6 - An abstraction and architecture library meant to be used along side JOGL to scale games more easily. Java 8 has Java3D already installed but is heavily outdated in all JRE's even up to SE 9. You should download the newest release of both Java3D and JOGL from the Jogamp website to get it working correctly. There is no need to set native paths as the jar files contain this information but must be placed in /Library/Java/Extensions. 
 
 Here are a few video links to scenes I am creating...
 
@@ -51,9 +51,9 @@ You can traverse the file system by opening your command shell and typing "cd /"
 
 I am using Mac OS X Lion version 10.7.5 with 4 GB's of RAM and stock VRAM. Don't forget you can take your Mac to the Apple store and they will upgrade it to the newest possible OS for free. It takes a few minutes to load a million hairs in Blender, which I use to edit my object models. I would recommend Blender or AutoDesk Maya. You can download .obj files online or there are many other formats. The material .mtl file holds the texture data and has to be accessed some other way. 
 
-I currently use Eclipse Luna IDE which I would highly recommend. From your project build settings(right click on project, click Build Path/Configure Build Path/Library pane/Add Library/User Library, name it, and then Add External jars to that) and for this project, create an Images folder. The background of the login window streams a live website url. You can change it but it currently is limited as to what pages it can render.   
+I first used Eclipse Luna IDE which I would highly recommend on Leopard. Now I'm running Eclipse Oxygen 4.7.1a on High Sierra. From your project build settings(right click on project, click Build Path/Configure Build Path/Library pane/Add Library/User Library, name it, and then Add External jars to that) and for this project, create an Images folder. The background of the login window streams a live website url. You can change it but it currently is limited as to what pages it can render fully. I have not encoded it for CSS etc.    
 
-I use Amazon Web Services RDS MySQL Database and an EC2 instance for Security Groups. Just allow incoming and outgoing TCP connections to "My IP Address"(which can change periodically) through port 3306. Uncheck the Multi-AZ deployment to stay on the free tier. My costs are about 50 cents a month.  
+I use Amazon Web Services RDS MySQL Database and an EC2 instance for Security Groups. Just allow incoming and outgoing TCP connections to "My IP Address"(which can change periodically) through port 3306. Uncheck the Multi-AZ deployment to stay on the free tier. My costs are about 50 cents a month, but afterwards go up to around 15-20 dollars a month for my usage.  
 
 This project is an open source game template for developers who want to build a fully functional OpenGL and Java based application that's easily portable to other systems. This project mostly uses Swing for it's windowing toolkit. The OpenGL functions can be converted directly to C# or C++ syntax within seconds by using a simple replace all text function within Eclipse, changing "GL2.GL_METHOD_EXAMPLE to the original GL_METHOD_EXAMPLE." OpenGL is widely used in the console industry and easily translates to DirectX and graphics standards allow for easy cross-project development on any gaming console whether DirectX or OpenGL, the two leading graphics libraries. In the future I plan to migrate the code to the Hololens when it's software development kit becomes available, as it's currently in early development phases as well as the ALICE Bot. 
 
