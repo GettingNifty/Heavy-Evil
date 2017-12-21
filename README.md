@@ -15,7 +15,7 @@ Spring 4.4(currently unused)for server hosting rather than using a hosting websi
 
 JSoup 1.8.3(currently unused)for html parsing
 
-Jogamp Java3D 1.6 - An abstraction and architecture library meant to be used along side JOGL to scale games more easily. Java 8 has Java3D already installed but is heavily outdated in all JRE's even up to SE 9. You should download the newest release of both Java3D and JOGL from the Jogamp website to get it working correctly. There is no need to set native paths as the jar files contain this information but must be placed in /Library/Java/Extensions. 
+Jogamp Java3D 1.6 - An abstraction and architecture library meant to be used along side JOGL to scale games more easily. Java 8 has Java3D already installed but is heavily outdated in all JRE's even up to SE 9. You should download the newest release of both Java3D and JOGL from the Jogamp website to get it working correctly. There is no need to set native paths as the jar files contain this information but must be placed in /Library/Java/Extensions. The URL for the newest version of Java 3D is listed below. Please follow my uploaded screenshots. The native dylibs have changed but simply keep the dylibs and the .jar files listed in the screenshots. On newer versions of Mac you have to turn on FileVault to get Recovery access, hold Command+R at boot up and open the terminal application, using csrutil disable command and then a restart to allow you to copy the necessary open gl(JOGL) and java 3d .jar files into your cd /System/Library/Java/Extensions folder. 
 
 Here are a few video links to scenes I am creating...
 
