@@ -17,6 +17,7 @@ import javax.vecmath.Vector3f;
 
 import com.sun.j3d.loaders.Scene;
 import com.sun.j3d.loaders.objectfile.ObjectFile;
+import com.sun.j3d.utils.behaviors.vp.OrbitBehavior;
 import com.sun.j3d.utils.universe.SimpleUniverse;
 import com.sun.j3d.utils.universe.ViewingPlatform;
 
@@ -34,6 +35,7 @@ public class ObjectLoader extends Frame {
 		add(canvas3D);
 		canvas3D.setSize(1200, 800);
 		canvas3D.setVisible(true);
+		
 
 		BranchGroup scene = new BranchGroup();
 
@@ -55,17 +57,26 @@ public class ObjectLoader extends Frame {
 		light1.setInfluencingBounds(bounds);
 
 		scene.addChild(light1);
+		
+		Transform3D transform = new Transform3D();
+		transform.lookAt(new Point3d(0, 0, 4), new Point3d(0, 0, 0), new Vector3d(0, 1, 0));
+		transform.invert();
 
 		Scene modelScene = null;
 
 		try {
-			modelScene = loader.load("Images/gargoyle.obj");
+			modelScene = loader.load("Images/untitled.obj");
 
 		} catch (Exception e) {
 
 		}
 
 		scene.addChild(modelScene.getSceneGroup());
+		
+		OrbitBehavior orbit = new OrbitBehavior(canvas3D, OrbitBehavior.REVERSE_ALL);
+		orbit.setSchedulingBounds(bounds);
+		orbit.setRotateEnable(true);
+		orbit.setRotXFactor(5d);
 
 		SimpleUniverse universe = new SimpleUniverse(canvas3D);
 		universe.getViewingPlatform().setNominalViewingTransform();
@@ -73,12 +84,12 @@ public class ObjectLoader extends Frame {
 		universe.addBranchGraph(scene);
 		
 		ViewingPlatform viewPlatform = universe.getViewingPlatform();
-	    TransformGroup viewTransform = viewPlatform.getViewPlatformTransform();
-	    Transform3D t3d = new Transform3D();
-	    viewTransform.getTransform(t3d);
-	    t3d.lookAt(new Point3d(0, 0, 4), new Point3d(0, 0, 0), new Vector3d(0, 1, 0));
-	    t3d.invert();
-	    viewTransform.setTransform(t3d);
+		viewPlatform.setViewPlatformBehavior(orbit);
+
+		TransformGroup viewTransform = viewPlatform.getViewPlatformTransform();
+
+		viewTransform.setTransform(transform);
+		
 
 	}
 
